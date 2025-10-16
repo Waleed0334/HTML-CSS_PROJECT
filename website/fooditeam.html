@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      nav{
+            display: flex;
+            background-color:aqua;
+            height: 70px;
+            border: 3px solid black;
+            position: fixed;
+            top: 10px;
+            left: 2px;
+            right: 2px;
+           
+        }
+        a{ 
+            color: black;
+            position: relative;
+            left: 70%;
+            text-decoration: none;
+            margin: 10px;
+            position: relative;
+            top: 20px;    
+        }
+        #a{
+            width: 120%;
+            height: 70px;
+            border: none; 
+            position: relative;           
+            left: 20px;
+        }
+        #c{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+        input{
+            padding: 5px 15px;
+        }
+        #search{
+            background-color: aquamarine;
+            color: white;
+            padding: 5px 15px;
+        }
+        #search:hover{
+            background-color: blue;
+            color: white;
+        }
+        
+        section{
+            
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 8%;
+        }
+        img{
+            width: 250px;
+            height: 200px;                     
+        }
+        body{
+            background-color: lightgray;
+        }
+        h1{background-color: black;
+        color: white;
+        position:sticky;
+        top:80px;
+        right:0.3%;
+        left:0.3%;
+        text-align: center;
+        }
+        /* section divs */
+        .a{ 
+            background-color: lightcyan;
+            text-align: center;
+            width: 250px;
+            height: 250px;
+            border:2px solid gray;
+            border-radius:5px;
+        }
+        .a:hover{
+            text-transform: uppercase;
+           
+       
+        }
+        button{
+            background-color: gray;
+            color: black;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        footer{
+            background-color: black;
+            color: white;
+           margin-top: 10px;
+            height: 70px;
+            font-size: large;          
+        }
+        #foot{
+            position: relative;
+            top: 25px;
+        }
+       
+        #image{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWnQPVxBCq3Y8Wjw4Mv2-WyS_nb7L-cgkIMh9bmZAT9jEUFRB2qRNOR2UzkKEi4zveYk&usqp=CAU");           
+            width: 100%;
+            height:300px;
+            border: 3px solid black;
+            border-radius: 5px;
+            margin-top:85px ;
+          
+        }
+        #button1{
+           
+           background-color: aquamarine;
+           color: white;
+           padding: 3px 10px;
+           
+       }
+       #button1:hover{
+           background-color: blue;
+           color: white;
+       }
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div ><img id="a" src="https://i0.wp.com/ivend.com/wp-content/uploads/2020/12/imtiaz-logo.png?resize=300%2C141&ssl=1" alt=""></div>
+        <div >
+    
+            <a href="home.html" >Home</a>
+            <a href="fooditeam.html"style="text-decoration: underline;">Grocery</a>
+            <a href="clothes.html">Clothes</a>
+            <a href="jewellery.html">Jewellery</a>
+            <a href="machinary.html">Electronics</a>
+            <a href="stationary.html">Stationary</a>
+            <a href="sport.html">Sport &amp;Toys</a>
+            
+        </div>
+    
+        <div id="c">
+            <form action="https://www.google.com/search?">
+                
+                    <input type="text" placeholder="search" name="q">
+                    <button type="reset" id="button1"> &cross;</button>
+               
+               <button type="submit" id="button1">search &#128269;</button>
+               </form> </div>
+               </nav>
+    
+    <div id="image">
+    </div>
+    <h1>Grossary Items</h1>
+    <form action="form.html">
+<section>
+    
+
+    <div class="a"  ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQSjj0RFnleEREwQh_V-IWbR4qR68JEsQlRQ&s" alt="">
+    Price:800rs/kg  <br><button type="submit">buy now</button></div>
+    <div class="a" ><img src="https://swadheshmart.com/uploads/MYSORE_DAL.jpg" alt="">
+    Price:500rs/kg <br><button type="submit">buy now</button></div>
+    <div class="a" > <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnWT2MnVO_mnJQdyR9s2C3j-fjZ2F1o1nsEA&s" alt="">
+    Price:600rs/kg <br><button type="submit">buy now</button></div>
+    <div class="a" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSnqUhF0TNyZRbgaNslXaB01tdtWGWfi0A1Q&s" alt="">
+    Price:700rs/kg <br><button type="submit">buy now</button></div>
+    
+    
+</section>
+<section>
+    
+
+    <div class="a"  ><img src="https://i.brecorder.com/primary/2023/01/63ce38744b95d.jpg" alt="">
+    Price:1800rs  <br><button type="submit">buy now</button></div>
+    <div class="a" ><img src="https://i.ytimg.com/vi/m7n5zOq4q3o/maxresdefault.jpg" alt="">
+    Price:2500rs <br><button type="submit">buy now</button></div>
+    <div class="a" > <img src="https://thepriceindex.pk/wp-content/uploads/Cooking-oil-price-in-Pakistan.webp" alt="">
+    Price:1500rs <br><button type="submit">buy now</button></div>
+    <div class="a" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhiTuCY4ncQwN1LceltNumcAgbU0tHCJ0EFw&s" alt="">
+    Price:1700rs <br><button type="submit">buy now</button></div>
+    
+    
+</section>
+<section>
+    
+
+    <div class="a"  ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8p_jnNJj4HCxjoBzoHoPKPNTex-IM-llaIw&s" alt="">
+    Price:800rs/kg  <br><button type="submit">buy now</button></div>
+    <div class="a" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShbTdtypdANe3S2TPPcpdMnP-_HoW-jg7_AA&s" alt="">
+    Price:500rs/kg <br><button type="submit">buy now</button></div>
+    <div class="a" > <img src="https://farmersfz.com/assets/public/vegimg/ladisfing1.jpg" alt="">
+    Price:600rs/kg <br><button type="submit">buy now</button></div>
+    <div class="a" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkBv47wYvk4e7bo0UWBDHWSMODMCMSylJ8Ow&s" alt="">
+    Price:700rs/kg <br><button type="submit">buy now</button></div>
+    
+    
+</section>
+</form>
+<footer>
+    <center id="foot" >
+    IMTIAZ SUPER MARKET{imtaiz123@gmail.com}
+    contact us:111 222 333
+</center>
+</footer>
+</body>
+</html>

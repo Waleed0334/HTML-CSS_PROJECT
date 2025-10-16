@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-decoration: underline dashed;
+        }
+
+        body {
+            background-color: darkgray;
+        }
+
+        form {
+            margin: auto;
+            width: 50%;
+            color: red;
+            font-size: x-large;
+
+        }
+
+        div {
+            text-align: center;
+        }
+
+        label {
+            display: inline-block;
+            width: 250px;
+        }
+
+        label,
+        input {
+            margin: 25px;
+        }
+
+        fieldset {
+            height: 1000px;
+
+            border: 3px solid red;
+            border-radius: 10px;
+            background-color: black;
+        }
+
+        select {
+            margin-top: 25px;
+        }
+
+        legend {
+            background-color: black;
+            border: 3px dotted red;
+            border-radius: 4px;
+            font-size: xx-large;
+        }
+
+        input {
+            border: 2px solid red;
+            border-radius: 3px;
+            padding: 10px 20px;
+        }
+
+        #name {
+            background-image: url("https://cdn-icons-png.flaticon.com/128/4140/4140077.png");
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            text-indent: 30px;
+
+        }
+
+        #address {
+            background-image: url("https://cdn-icons-png.flaticon.com/128/535/535188.png");
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            text-indent: 20px;
+        }
+
+        #email {
+            background-image: url("https://cdn-icons-png.flaticon.com/512/5968/5968534.png");
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            text-indent: 40px;
+        }
+
+
+        #time {
+            background-image: url("https://cdn-icons-png.flaticon.com/128/561/561184.png");
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position-x: 85%;
+            margin-top: 25px;
+            padding: 7px 50px;
+            border: 3px solid red;
+            border-radius: 4px;
+        }
+
+        #feedback {
+            background-image: url("https://cdn-icons-png.flaticon.com/128/1628/1628629.png");
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            padding-right: 80px;
+            margin-top: 25px;
+            border: 3px solid red;
+            border-radius: 4px;
+        }
+
+        #phone {
+            background-image: url("https://cdn-icons-png.flaticon.com/128/597/597177.png");
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            text-indent: 40px;
+        }
+
+        button {
+            margin-top: 8%;
+            color: black;
+            background-color: red;
+            width: 120px;
+            height: 40px;
+            font-size: xx-large;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: gray;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>FORM</H1>
+    <form action="submit.html">
+        <fieldset>
+            <legend>ORDER HERE</legend>
+            <div>
+                <label for="name"> NAME:</label>
+                <input id="name" type="text" required placeholder="Enter Name" name="name">
+            </div>
+            <div>
+                <label for="address">ADDRESS:</label>
+                <input id="address" type="text" required placeholder="Enter Address">
+            </div>
+            <div>
+                <label for="email">Your Email:</label>
+                <input id="email" type="email" required placeholder="Enter email" >
+            </div>
+            <div>
+                <label for="phone">Phone No.</label>
+                <input id="phone" type="number">
+            </div>
+            <div>
+                <h2>i am 18+</h2>
+                <input required id="yes" type="radio" name="radio" >
+                <label for="yes">Yes</label>
+
+                <input id="no" required type="radio" name="radio">
+                <label for="no">No</label>
+            </div>
+
+            <div>
+                <label for="time">Category:</label>
+                <select  name="time" id="time">
+                    <option value="?">Select Item Category</option>
+                    <option value="clothes">Clothes</option>
+                    <option value="food items">food Items</option>
+                    <option value="jewellery">Jewellery Items</option>
+                    <option value="stationary">Stationary Items</option>
+                    <option value="machinary">Machinary Items</option>
+                    <option value="sport">Sport Items</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="feedback">Give Your Feedback:</label>
+                <textarea id="feedback" placeholder="write your feedback here"></textarea>
+            </div>
+            <div>
+                <button type="submit" id="b1">Order </button> &amp;
+                <button type="reset" id="b2">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
