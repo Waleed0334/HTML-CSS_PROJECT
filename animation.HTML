@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>applying animation in css</title>
+    <style>
+        h1{
+            text-align: center;
+            color: blue;
+        }
+        span{
+            position: relative;
+            top: 30px;
+            font-size: xx-large;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50px;
+            text-align: center;
+            position: relative;
+
+            animation-name: waleed;
+            animation-duration:5s;
+            animation-delay:0s;
+            animation-iteration-count: infinite;
+        }
+        body{
+            background-color: aqua;
+        }
+        @keyframes waleed{
+            0% {
+        top: 10px;
+        left: 300px;
+      }
+      25% {
+        top: 10px;
+        left: 1000px;
+      }
+      50% {
+        top: 500px;
+        left: 1000px;
+      }
+      75% {
+        top: 500px;
+        left: 300px;
+      }
+      100% {
+        top: 10px;
+        left: 300px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <h1><u>APPLYING ANIMATION IN CSS</u></h1>
+    <DIV><SPAN>BALL</SPAN></DIV>
+</body>
+</html>
